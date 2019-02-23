@@ -23,7 +23,7 @@ with an *Application System*, that is a way to provide functions for
 rendering and updating the game components, you'll have to create
 one just as below:
 
-```
+```java
 public class MyGame extends GLibApp {
   
   private GLibFont monospaced = GLibFont.MONOSPACED.deriveFont(10f);
@@ -58,7 +58,7 @@ public class MyGame extends GLibApp {
 After implementing the structure above, you need to call GLib to
 initialize your application, and it is done as it follows:
 
-```
+```java
 public class MainClass {
   
   public static void main(String[] args) {
@@ -78,5 +78,4 @@ public class MainClass {
 
 GLib was compiled in Java 10.0.2 (*Java 10*) and therefore, uses
 the new **Java Module System** implemented in *Java 9*. You may learn
-more about the module system by clicking <a href="https://www.oracle.com/corporate/features/understanding-java-9-modules.html">here</a>.
-
+more about the module system by clicking [here](https://www.oracle.com/corporate/features/understanding-java-9-modules.html).
