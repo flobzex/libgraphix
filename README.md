@@ -63,7 +63,7 @@ initialize your application, and it is done as it follows:
 public class MainClass {
   
   public static void main(String[] args) {
-    var myApp = new MyApp();
+    var myGame = new MyGame();
     int width = 640;
     int height = 480;
     int pixelSize = 2;
@@ -72,7 +72,7 @@ public class MainClass {
     boolean fullScreen = false;
     
     // initializes GLib and shows the window
-    GLib.initialize(myApp, width, height, pixelSize,
+    GLib.initialize(myGame, width, height, pixelSize,
                     fpsRate, infiniteFPS, fullScreen);
   }
 }
