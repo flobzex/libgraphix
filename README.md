@@ -26,11 +26,12 @@ one just as below:
 ```java
 public class MyGame extends GLibApp {
   
-  private GLibFont monospaced = GLibFont.MONOSPACED.deriveFont(10f);
+  private GLibFont monospaced;
   
   @Override
   public void init() {
     // initialize game components
+    this.monospaced = GLibFont.MONOSPACED.deriveFont(10.0f);
   }
   
   @Override
@@ -70,8 +71,9 @@ public class MainClass {
     boolean infiniteFPS = false;
     boolean fullScreen = false;
     
-    // initializes GLib and all of its elements, and then shows the window
-    GLib.initialize(myApp, width, height, pixelSize, fpsRate, infiniteFPS, fullScreen);
+    // initializes GLib and shows the window
+    GLib.initialize(myApp, width, height, pixelSize,
+                    fpsRate, infiniteFPS, fullScreen);
   }
 }
 ```
