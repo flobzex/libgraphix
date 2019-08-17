@@ -26,12 +26,12 @@ one just as below:
 ```java
 public class MyGame extends GLibApp {
   
-  private GLibFont monospaced;
+  private GLibFont gameFont;
   
   @Override
   public void init() {
     // initialize game components
-    this.monospaced = GLibFont.MONOSPACED.deriveFont(10.0f);
+    this.gameFont = GLibFont.MONOSPACED.deriveFont(10.0f);
   }
   
   @Override
@@ -41,7 +41,7 @@ public class MyGame extends GLibApp {
     batch.clearScreen();
     
     batch.color(0xffff0000);
-    batch.drawText("Hello, World!", 100, 100, monospaced);
+    batch.drawText("Hello, World!", 100, 100, gameFont);
   }
   
   @Override
